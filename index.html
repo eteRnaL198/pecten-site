@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pecten</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-500 p-4">
+      <div class="container mx-auto">
+        <a href="#" class="text-white font-bold">Pecten</a>
+        <a href="#" class="ml-4 text-white">Learn</a>
+        <a href="#" class="ml-4 text-white">Documentation</a>
+        <a href="#" class="ml-4 text-white">Community</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gray-800 text-white h-screen flex items-center">
+      <div class="container mx-auto text-center">
+        <img src="./img/logo.png" alt="" class="mx-auto mb-2" />
+        <h1 class="text-5xl font-bold mb-4">Pecten</h1>
+        <p class="text-lg mb-8">
+          C language extensions to facilitate aspect-oriented programming
+        </p>
+        <div class="mb-16">
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-700 text-2xl text-white py-4 px-8 mr-8 rounded"
+            >Get Started</a
+          >
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-700 text-2xl text-white py-4 px-8 rounded"
+            >Download</a
+          >
+        </div>
+        <div class="bg-gray-200 px-8 mt-8 mx-auto text-left w-3/4">
+          <pre><code class="text-gray-800">
+abstract aspect Abstract {
+  constructor(param)
+  before(): execution(int foo()) {
+    printf(param);
+  }
+}
+        </code></pre>
+        </div>
+        <div class="bg-gray-200 px-8 mt-8 mx-auto text-left w-3/4">
+          <pre><code class="text-gray-800">
+aspect Concrete extends Abstract {
+  super("Hello, world!");
+}
+        </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 p-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2023 Ikuya Nagaki</p>
+      </div>
+    </footer>
+  </body>
+</html>
