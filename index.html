@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pecten</title>
+    <link rel="stylesheet" href="./destyle.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -13,10 +14,10 @@
     <!-- Navigation -->
     <nav class="bg-blue-500 p-4">
       <div class="container mx-auto">
-        <a href="#" class="text-white font-bold">Pecten</a>
-        <a href="#" class="ml-4 text-white">Learn</a>
-        <a href="#" class="ml-4 text-white">Documentation</a>
-        <a href="#" class="ml-4 text-white">Community</a>
+        <a href="#" class="nav_button text-white font-bold">Pecten</a>
+        <a id="learn" href="#" class="ml-4 text-white">Learn</a>
+        <a id="doc" href="#" class="ml-4 text-white">Documentation</a>
+        <a id="com" href="#" class="ml-4 text-white">Community</a>
       </div>
     </nav>
 
@@ -30,12 +31,12 @@
         </p>
         <div class="mb-16">
           <a
-            href="#"
+            href="https://github.com/eteRnaL198/pecten"
             class="bg-blue-500 hover:bg-blue-700 text-2xl text-white py-4 px-8 mr-8 rounded"
             >Get Started</a
           >
           <a
-            href="#"
+            href="https://github.com/eteRnaL198/pecten/releases"
             class="bg-blue-500 hover:bg-blue-700 text-2xl text-white py-4 px-8 rounded"
             >Download</a
           >
@@ -45,7 +46,7 @@
 abstract aspect Abstract {
   constructor(param)
   before(): execution(int foo()) {
-    printf(param);
+    printf("Hello, this.param");
   }
 }
         </code></pre>
@@ -53,7 +54,7 @@ abstract aspect Abstract {
         <div class="bg-gray-200 px-8 mt-8 mx-auto text-left w-3/4">
           <pre><code class="text-gray-800">
 aspect Concrete extends Abstract {
-  super("Hello, world!");
+  super(world!);
 }
         </code></pre>
         </div>
@@ -67,4 +68,5 @@ aspect Concrete extends Abstract {
       </div>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
