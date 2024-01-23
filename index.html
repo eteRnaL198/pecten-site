@@ -13,26 +13,30 @@
   <body class="font-sans bg-gray-100">
     <!-- Navigation -->
     <nav class="bg-blue-500 p-4">
-      <div class="container mx-auto">
-        <a href="#" class="nav_button text-white font-bold">Pecten</a>
-        <a id="learn" href="#" class="ml-4 text-white">Learn</a>
-        <a id="doc" href="#" class="ml-4 text-white">Documentation</a>
-        <a id="com" href="#" class="ml-4 text-white">Community</a>
+      <div class="mx-auto flex gap-4">
+        <a href="#" class="text-white font-bold">Pecten</a>
+        <a id="learn" href="#" class="text-white">Learn</a>
+        <a id="doc" href="#" class="text-white">Documentation</a>
+        <a id="com" href="#" class="text-white">Community</a>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="bg-gray-800 text-white h-screen flex items-center">
-      <div class="container mx-auto text-center">
-        <img src="./img/logo.png" alt="" class="mx-auto mb-2" />
+    <div
+      class="flex flex-col bg-gray-800 text-white min-h-screen items-center pt-8"
+    >
+      <div class="flex flex-col mx-auto text-center w-10/12">
+        <img src="./img/logo.png" alt="" class="mx-auto mb-2 w-1/4" />
         <h1 class="text-5xl font-bold mb-4">Pecten</h1>
         <p class="text-lg mb-8">
           C language extensions to facilitate aspect-oriented programming
         </p>
-        <div class="mb-16">
+        <div
+          class="flex flex-col md:flex-row justify-center mb-8 mx-auto gap-8 w-3/4"
+        >
           <a
             href="https://github.com/eteRnaL198/pecten"
-            class="bg-blue-500 hover:bg-blue-700 text-2xl text-white py-4 px-8 mr-8 rounded"
+            class="bg-blue-500 hover:bg-blue-700 text-2xl text-white py-4 px-8 rounded"
             >Get Started</a
           >
           <a
@@ -41,7 +45,9 @@
             >Download</a
           >
         </div>
-        <div class="bg-gray-200 px-8 mt-8 mx-auto text-left w-3/4">
+        <div
+          class="bg-gray-200 px-8 mb-8 mx-auto text-left w-full overflow-x-auto"
+        >
           <pre><code class="text-gray-800">
 abstract aspect Abstract {
   constructor(param)
@@ -51,7 +57,7 @@ abstract aspect Abstract {
 }
         </code></pre>
         </div>
-        <div class="bg-gray-200 px-8 mt-8 mx-auto text-left w-3/4">
+        <div class="bg-gray-200 px-8 mx-auto text-left w-full overflow-x-auto">
           <pre><code class="text-gray-800">
 aspect Concrete extends Abstract {
   super(world!);
@@ -63,7 +69,7 @@ aspect Concrete extends Abstract {
 
     <!-- Footer -->
     <footer class="bg-gray-200 p-4">
-      <div class="container mx-auto text-center">
+      <div class="mx-auto text-center">
         <p>&copy; 2023 Ikuya Nagaki</p>
       </div>
     </footer>
